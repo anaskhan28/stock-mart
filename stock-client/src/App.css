@@ -40,3 +40,10 @@
 .read-the-docs {
   color: #888;
 }
+body {
+  background-color: #1E1E1E; /* Replace with your desired dark color */
+  margin: 0; /* Reset default margin */
+  padding: 0; /* Reset default padding */
+  font-family: Arial, sans-serif; /* Set a default font family */
+  color: #fff; /* Set a default text color */
+}
