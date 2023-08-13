@@ -1,21 +1,4 @@
-// import React from 'react'
-// import Card from './OutlinedCard';
-// import OutlinedCard from './OutlinedCard';
 
-// const Stock = () => {
-
-//   return (
-//     <div>
-//       <OutlinedCard/>
-//       <OutlinedCard/>
-//       <OutlinedCard/>
-//       <OutlinedCard/>
-//       <OutlinedCard/>
-//     </div>
-//   )
-// }
-
-// export default Stock
 import React from 'react';
 import OutlinedCard from './CommonComponents/OutlinedCard'
 import Navbar from './NavBar/NavBar';
