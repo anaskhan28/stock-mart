@@ -14,7 +14,7 @@ const OutlinedCard = ({ title, content }) => {
       <Grid item md={3} sm={4} xs={12}>
     <Card style={{ minWidth: 300, marginBottom: '20px',backgroundColor:"#444" }} variant="outlined">
       <CardContent>
-        <Typography sx={{ fontSize: 14,color:"white" }} color="text.secondary" gutterBottom>
+        <Typography sx={{ fontSize: 14,color:"white" }} >
         Reliance Industries Limited
         </Typography>
         <Typography variant="h5" component="div">
@@ -28,7 +28,7 @@ const OutlinedCard = ({ title, content }) => {
         </Typography>
       </CardContent>
       
-      <Button  sx={{ outline: '1px solid green',color:"green" ,mb:"2rem"}}variant="outlined">Learn More</Button>
+      <Button  sx={{ outline: '1px solid green',color:"green" ,mb:"2rem",border:0,'&.MuiButton-root:hover':{bgcolor: 'transparent'}}}>Learn More</Button>
      
     </Card>
     </Grid>

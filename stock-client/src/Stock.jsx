@@ -1,5 +1,9 @@
 
+<<<<<<< HEAD
 
+=======
+import React from 'react';
+>>>>>>> ff7cc51c516c04ad38ad0a12db9e7a6cc97069e9
 import OutlinedCard from './CommonComponents/OutlinedCard'
 import Navbar from './NavBar/NavBar';
 
