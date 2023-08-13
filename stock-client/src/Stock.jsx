@@ -1,26 +1,13 @@
-// import React from 'react'
-// import Card from './OutlinedCard';
-// import OutlinedCard from './OutlinedCard';
 
-// const Stock = () => {
 
-//   return (
-//     <div>
-//       <OutlinedCard/>
-//       <OutlinedCard/>
-//       <OutlinedCard/>
-//       <OutlinedCard/>
-//       <OutlinedCard/>
-//     </div>
-//   )
-// }
-
-// export default Stock
-import React from 'react';
 import OutlinedCard from './CommonComponents/OutlinedCard'
 import Navbar from './NavBar/NavBar';
 
+
 const Stock = () => {
+
+
+
   const cardData = [
     {
       // title: 'Card Title 1',
@@ -66,7 +53,7 @@ const Stock = () => {
 <Navbar/>
     <div style={{ marginTop:"60px",display: 'flex', justifyContent: 'center', flexWrap: 'wrap' }}>
       {cardData.map((card, index) => (
-        <OutlinedCard key={index} title={card.title} content={card.content} />
+        <OutlinedCard key={index} title={card.shortName} content={card.symbol} />
       ))}
       
     </div>
