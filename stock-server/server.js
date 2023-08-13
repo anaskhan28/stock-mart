@@ -4,9 +4,11 @@ const yahooFinance = require('yahoo-finance2').default;
 const app = express();
 const port = 3000;
 
-app.get('/stock-data', async (req, res) => {
+app.get('/stock-data/:name', async (req, res) => {
+  const stockName = req.params
+
   try {
-    const stockData = await yahooFinance.quoteSummary('TCS.NS');
+    const stockData = await yahooFinance.quoteSummary(stockName.name,  { modules: [ "financialData" ] });
     res.json(stockData);
   } catch (error) {
     console.log(error)
