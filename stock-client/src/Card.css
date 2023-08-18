@@ -26,4 +26,29 @@
   .card-text {
     font-size: 14px;
   }
+
+  .card-top{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
   
+  .finance{
+    display: flex;
+    justify-content: space-around;
+  }
+  .finance span{
+    color: #908e8e;
+    
+  }
+
+  .changePrice{
+    font-size: 10px;
+    padding-top: 3px;
+  }
+
+  .arrow{
+    height: 12px;
+    width: 12px;
+    padding: 0px 2px 0px 4px;
+  }

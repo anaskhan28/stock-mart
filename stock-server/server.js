@@ -8,7 +8,9 @@ app.get('/stock-data/:name', async (req, res) => {
   const stockName = req.params
 
   try {
-    const stockData = await yahooFinance.quoteSummary(stockName.name,  { modules: [ "financialData" ] });
+    const stockData = await yahooFinance.quote([stockName.name]
+       
+        );
     res.json(stockData);
   } catch (error) {
     console.log(error)
